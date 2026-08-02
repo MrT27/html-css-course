@@ -152,11 +152,13 @@ li:last-child {
   font-style: italic;
 }
 
+/* itt egy számot kell irni vagy vannak kulcs szavak odd - az lesz a páratlenok even pedig a párosak */
 li:nth-child(even) {
   /* color: red; */
 }
 
 /* Misconception: this won't work! */
+/* Csak akkor működik, ha az article első eleme valóban p */
 article p:first-child {
   color: red;
 }
