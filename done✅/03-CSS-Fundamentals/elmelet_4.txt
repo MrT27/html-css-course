@@ -1,0 +1,765 @@
+Oktató: Most, hogy a dobozmodell alapjait
+
+elsajátítottuk, menjünk egy lépéssel tovább, és beszéljünk
+
+a dobozmodellben létező különböző típusú
+
+dobozokról.
+
+És talán már észrevette,
+
+hogy a CSS-ben különböző típusú dobozok léteznek.
+
+Nézzük meg ezt az elemet, hogy megmutassuk, mire gondolok.
+
+Például ez itt, és láthatod, hogy ez a H2 elem elfoglalja
+
+az összes helyet, amit elfoglalhat.
+
+Tehát alapvetően
+
+a bal oldaltól a jobb oldalig tart, igaz?
+
+És ugyanez igaz például
+
+erre az egész fejlécre, természetesen erre az egész cikkre és a fejlécre is.
+
+És tényleg a legtöbb elem ilyen.
+
+De vannak más elemek is, tehát
+
+más dobozok, mondhatni, mint például ez.
+
+Tehát itt van ez az erős elem, de
+
+láthatod, hogy csak pontosan azt a helyet foglalja
+
+el, ahol a tartalma van.
+
+És ugyanez igaz például erre a képre is.
+
+Így láthatod, hogy valójában csak 50 x
+
+50 pixeles, ami pontosan a tartalom mérete.
+
+És például ugyanez a helyzet
+
+itt ezzel a horgonytechnológiával, amelyről most láthatod, hogy
+
+pontosan azt a szélességet foglalja el, ami a tartalmához
+
+szükséges.
+
+Tehát az ilyen típusú dobozokat, amelyek csak pontosan
+
+annyi helyet foglalnak el, amennyi a tartalomhoz szükséges,
+
+soron belüli dobozoknak nevezzük.
+
+Másrészt, az összes többi doboz, például
+
+ez a bekezdés vagy ez a H3 címsor, ezeket nevezzük blokk szintű
+
+dobozoknak vagy blokk szintű elemeknek.
+
+Tehát a blokkszintű elemek vagy dobozok
+
+minden helyet elfoglalnak, amit csak
+
+tudnak, és alapvetően sortörést hoznak létre
+
+utánuk, vagy
+
+más szóval, nem lehetnek egymás mellett, igaz?
+
+Tehát, ha vízszintesen elfoglalják az összes
+
+helyet, amire szükségük van,
+
+akkor természetesen nem lehetnek egymás mellett.
+
+Ennek van értelme, igaz?
+
+Ezek tehát az alapvető különbségek a
+
+blokkszintű és az inline dobozok között, de van még néhány további
+
+különbség is.
+
+Nézzünk tehát egy összehasonlítást.
+
+Tehát itt kiemeltem az összes blokkszintű elemet vagy
+
+blokkszintű dobozt, amelyek most az oldalunkon vannak.
+
+És ahogy már említettem,
+
+ezek az elemek alapvetően blokkokként vannak formázva,
+
+tehát nagy tartalmi blokkok, amelyek a szülőelemek szélességének
+
+100%-át foglalják el.
+
+És ez még akkor is igaz, ha maga a tartalom valójában
+
+nem igényelne ennyi helyet.
+
+Például ennek a what is HTML címnek valójában
+
+nincs szüksége az egész sorra, igaz?
+
+De ez még mindig egy blokkszintű elem, mert akkor
+
+alapértelmezés szerint függőlegesen egymás után rakhatók.
+
+Most egy nagyon fontos dolog, amit meg kell említenünk,
+
+hogy a doboz modell pontosan úgy vonatkozik
+
+a blokk szintű elemekre, ahogy azt korábban mutattam,
+
+míg ugyanez nem igaz az inline elemekre, ahogy azt mindjárt
+
+látni fogjuk, oké?
+
+Alapértelmezés szerint a legtöbb HTML elem valójában
+
+blokk szintű elem.
+
+Tehát olyan dolgok, mint a test, a főcím és így tovább és így tovább.
+
+Tehát a legtöbb elem, amit használtunk,
+
+valóban blokk szintű elem.
+
+Tehát azt is mondhatjuk, hogy blokkszintű dobozokat hoznak létre.
+
+Rendben?
+
+Egy dolog, amit a CSS segítségével megtehetünk, hogy a soron
+
+belüli dobozokról blokk szintű dobozokra váltunk, és ezt a display
+
+tulajdonság block értékre állított értékével tehetjük meg.
+
+De ezt mindjárt a gyakorlatban is meg fogjuk tenni.
+
+De most szeretném megvizsgálni az inline
+
+elemet, és azt, hogy miben különbözik
+
+a blokk szintű elemektől.
+
+Itt tehát ezzel a piros kerettel jelöltem az in-line elemet, és láthatod,
+
+hogy a várakozásoknak megfelelően csak pontosan annyi helyet
+
+foglalnak el, amennyi a tartalmához szükséges.
+
+Az elem után és előtt nem hoznak
+
+létre sortörést sem.
+
+Így tehát egyszerűen a szülő elemükön belül
+
+maradhatnak anélkül,
+
+hogy további helyet hoznának létre.
+
+És pontosan ez az, aminek értelme van az olyan kisebb
+
+elemeknél, mint az erős elem, az EM elem vagy a
+
+horgony elemek, igaz?
+
+Nem szeretnénk, ha ezek az elemek új sort hoznának létre, és
+
+elfoglalnák az összes lehetséges szélességet.
+
+Ennek egyszerűen semmi értelme nem lenne,
+
+és ezért vannak ezek a különböző típusú dobozok.
+
+De mindegy is, most a dobozmodellről, mint mondtam,
+
+másképp működik az inline elemeknél.
+
+Az inline elemek esetében tehát a magasság és szélesség tulajdonságoknak
+
+nincs hatása.
+
+A címsorok és margók csak vízszintesen, vagyis
+
+a bal és a jobb oldalon alkalmazhatók,
+
+de felül és alul nem.
+
+És ezt az alapvető különbséget,
+
+hogy hogyan működik a dobozmodell az inline elemek
+
+esetében, rendkívül fontos mindig szem előtt tartani
+
+és soha nem elfelejteni, mert ez egy olyan hiba, amit
+
+a kezdők gyakran elkövetnek, ami alapvetően
+
+az, hogy nem értik, miért nem működnek a dobozmodell bizonyos tulajdonságai
+
+az elvárt módon, amikor az inline elemekre alkalmazzák.
+
+Ezt tehát vegye figyelembe, mivel
+
+nagyon fontos, hogy mindig szem előtt tartsa.
+
+Alapértelmezés szerint néhány
+
+olyan elem, amely inline elem, tehát amely inline dobozokat
+
+hoz létre, az anchor image, strong, em, a gomb és még
+
+sok más.
+
+Ahogyan a display tulajdonságot használhatjuk
+
+bármely elem blokk szintű elemmé alakításához,
+
+úgy használhatjuk a display set to inline-t is,
+
+hogy bármely blokk szintű elemet inline elemmé
+
+alakítsunk.
+
+És most térjünk vissza a kódunkhoz, hogy lássunk néhányat
+
+ezekből a dolgokból a gyakorlatban.
+
+Kezdjük azzal, hogy megpróbáljuk formázni ezeket a linkeket, amelyek
+
+a fejlécben vannak.
+
+Válasszuk ki őket, de ezt majd lejjebb fogom megtenni.
+
+Hadd tegyek néhány megjegyzést.
+
+Mondjuk, hogy ezek olyanok, mint az oldalrészek vagy
+
+valami ilyesmi.
+
+Tehát alapvetően az oldalunk minden nagy elválasztó darabja.
+
+Tehát ott van a test, természetesen
+
+a konténer, a főcím, a navigációs cikk, és mindezek.
+
+És itt van az a pont, ahol elkezdünk
+
+kisebb elemekkel rendelkezni.
+
+És ezek a címek itt nem igazán számítanak.
+
+Csak azt akarom, hogy a kódon belül legyen egy vizuális
+
+elkülönítés.
+
+Oké, akkor menjünk lefelé, egészen lefelé,
+
+mondjuk itt.
+
+Tehát ki akarom választani az összes
+
+linket, amely a navigáción belül van.
+
+Tehát mondjuk a navigáció, majd a linkek.
+
+És mint mindig, most is a link pszeudo osztályt kellene használnom a
+
+tényleges stílushoz.
+
+Most, hogy egy kicsit jobban lássuk, mi történik,
+
+adjunk nekik egy színt, egy háttérszínt, például narancsvöröset.
+
+És most manuálisan újra kell töltenem.
+
+Oké, megvan a háttérszín, és most
+
+kezdjük el hozzáadni a margót.
+
+Csak így látjuk, hogy a doboz modell valójában
+
+nem alkalmazott módon, hogy azt hittük, hogy lenne.
+
+Tehát mondjuk 20 pixel, és adjunk neki egy mentést.
+
+És látod, hogy némi margót adtunk hozzá vízszintesen,
+
+tehát a bal és a jobb oldalon, igaz?
+
+Ami azonban nem történt meg, az az, hogy függőleges tér jött létre.
+
+Így a felső és alsó árrés változatlan maradt.
+
+Ha most ezt itt a dobozmodellben a fejlesztői
+
+eszközökben ellenőrizzük, akkor még mindig
+
+itt lent fog megjelenni.
+
+Itt még egy kis hely van.
+
+Láthatod, hogy a 20-as érték még mindig megjelenik,
+
+de itt a színes fedvényen, tehát itt ez a narancssárga
+
+valójában nem hozott létre helyet, annak ellenére, hogy itt
+
+20 van írva, igaz?
+
+Amint azt már tudjátok, ennek az az oka, hogy
+
+a horgonyzó elem egy soron belüli elem, ahol
+
+a dobozmodell nem hoz létre függőleges teret.
+
+És ugyanez igaz a kitömésre is.
+
+Tehát 20 pixeles kitöltés.
+
+Lássuk csak.
+
+És most valóban úgy tűnik, mintha némi hely keletkezett volna,
+
+de ez csak az elem belsejére igaz, mert valójában a horgonyzó
+
+tartalom, tehát maga a horgonyzó tartalom még mindig pontosan
+
+ugyanott van, de ha ez egy blokk szintű elem
+
+lenne, akkor ez az egész egy kicsit
+
+lejjebb került volna.
+
+Tehát alapvetően ennek az elemnek a kitöltési területe
+
+kibővült és kitöltődött a háttérszínnel,
+
+de valójában nem jött létre új hely.
+
+Oké, de ha valóban szeretnénk, hogy legyen ez a tér, és ha azt akarjuk,
+
+hogy az elemek egymás után legyenek, akkor természetesen megváltoztathatjuk
+
+őket blokk szintű elemekre.
+
+Tehát pontosan ezt mutattam meg a dián a
+
+display tulajdonság használatával
+
+és a block értékre állításával.
+
+Így ezután az inline elemet blokk szintű elemként
+
+fogja megjeleníteni.
+
+Szerintetek mi fog történni, ha ezt most elmentem?
+
+És itt is vagyunk.
+
+Most ezek az elemek elfoglalják az összes lehetséges szélességet,
+
+és most már függőleges margók is vannak közöttük.
+
+Most már a fejléc elemen kívül vannak, mert a fejléc
+
+elemet fix magasságra állítottuk be az egyik
+
+korábbi előadásban, ezért hadd
+
+mutassam meg ezt az átfedéssel, itt több helyre van szükségünk.
+
+És mivel a fejléc magasságát egy bizonyos
+
+AD pixel értékre állítottuk be, a tartalom
+
+már nem fér be oda.
+
+Így az elem nem bővült ki a tartalomnak
+
+megfelelően.
+
+Ez az oka annak, hogy általában
+
+nem állítunk be fix magasságot az elemekre.
+
+Hadd menjek vissza és változtassam meg.
+
+Ez csak egy demó volt, szóval igen, itt van a magasság, amit
+
+80-ra állítottunk be.
+
+Hadd kommentáljam ki, és mentsem el újra.
+
+És most az elem itt függőlegesen kibővült,
+
+hogy figyelembe vegye a további szükséges helyet.
+
+Oké, remélhetőleg így már van értelme.
+
+De a lényeg az, hogy ezek a horgonyzóelemek most már megfelelnek
+
+a blokkszintű elemek minden
+
+feltételének.
+
+Tehát a dobozmodell normálisan vonatkozik
+
+rájuk, és a rendelkezésre álló szélesség 100%-át foglalják
+
+el, ezért szépen egymás után, blokkokként
+
+jelennek meg.
+
+Rendben?
+
+Tehát elfoglalják az összes helyet, ahogy itt látjuk,
+
+ami természetesen a margót is magában foglalja.
+
+Tehát mindegyiknek, ha megnézzük, van némi mozgástere, igaz?
+
+Tehát ez itt ez a narancssárga szín.
+
+Ez tehát része annak a teljes térnek,
+
+amelyet maga az elem igényel.
+
+Rendben, akkor menjünk vissza ide,
+
+és kapcsoljuk ki az egészet,
+
+mert ez tényleg csak egy demó volt, oké?
+
+És most természetesen látni fogjuk, hogy a fejléc visszaszűkül,
+
+hogy csak függőlegesen foglalja el itt azt a helyet, amire szüksége van.
+
+Rendben, tehát ahogy egyre több és több elemet
+
+adunk hozzá, ennek növekednie kell, ami pontosan ez
+
+történt korábban, amikor ezek a linkek nagyobbak
+
+voltak, de most újra kicsik, és ezért
+
+az a sok hely, amire szükségünk volt, nem volt szükséges.
+
+Most pedig gyorsan próbáljuk ki az ellenkezőjét, és változtassunk
+
+meg néhány blokk szintű elemet inline elemekre.
+
+Próbáljuk ki például, mi történik,
+
+ha a listaelemeket inline-nak tesszük.
+
+Megjelenítés soron belül.
+
+Vegyük ki ezt valójában.
+
+És most láthatod, hogy ez a három elem alapvetően egymás mellett
+
+van, és csak annyi helyet foglalnak el,
+
+amennyire szükségük van.
+
+És tulajdonképpen térjünk vissza erre, mert,
+
+ahogy említettem, a fejlesztői eszközök nagyon
+
+fontosak, különösen az ilyen dobozok átfedésénél, igaz?
+
+Így most a dobozok így állnak egymás mellett,
+
+mivel soron belüli dobozok, így már nem
+
+hozzák létre a sortöréseket utánuk, és csak azt
+
+a helyet foglalják el, amire szükségük van.
+
+Próbáljuk meg ugyanezt, kapcsoljuk ki itt, és próbáljuk
+
+meg ugyanezt a bekezdéseken.
+
+És ez még furcsábban néz ki, mert az összes
+
+szöveg alapvetően egyetlen
+
+nagy sorba omlott, úgy néz ki, nem igaz?
+
+Tehát ismétlem, minden egyes elem alapvetően csak annyi
+
+helyet foglal el, amennyire szüksége van.
+
+Rendben?
+
+De ezt vegyük ki, mert
+
+ebben a helyzetben nem sok értelme van,
+
+de bizonyos helyzetekben valóban sok értelme van.
+
+Sok helyzetben még több értelme van annak, ha
+
+egy blokk szintű elemet átalakítunk
+
+egy úgynevezett inline blokkelemmé.
+
+Tehát alapvetően ez az inline és a blokk szint keveréke.
+
+Nézzük meg gyorsan, hogy ez mit jelent.
+
+Tehát itt van egy gyors összefoglaló
+
+mind a blokkszintű, mind az inline dobozokról.
+
+Tehát ezt már tudjuk,
+
+így nem kell ezt újra átbeszélnünk.
+
+De alapvetően van egy harmadik típusú doboz
+
+is, amely e kettő keveréke.
+
+Ez tehát, ahogy már említettem, az inline blokk doboz.
+
+Tehát az inline blokkdobozok
+
+kívülről úgy néznek ki, mint az inline-ok, de
+
+belülről úgy viselkednek, mint a blokk szintű elemek.
+
+Ez tehát azt jelenti, hogy az inline blokkdobozok csak annyi
+
+helyet foglalnak el, amennyire a tartalomnak szüksége van.
+
+És így tehát nem okoznak sortörést.
+
+Tehát erre gondolok, amikor azt mondom, hogy az inline blokkdoboz
+
+kívülről úgy viselkedik, mint egy inline doboz.
+
+Azonban, mint mondtam,
+
+belülről úgy viselkedik, mint egy blokkszintű doboz.
+
+Ez tehát azt jelenti, hogy a dobozmodell ugyanúgy alkalmazható,
+
+mint a blokkszintű dobozok esetében.
+
+Tehát továbbra is beállíthatjuk a magasságot és a szélességet,
+
+és továbbra is használhatjuk a margókat és a kitöltéseket,
+
+mint a blokkszintű dobozoknál vagy a blokkszintű elemeknél.
+
+Szóval ezek nagyjából
+
+ugyanazok, ezért felváltva használom őket.
+
+Tehát lényegében az inline blokkdobozok egyesítik a blokkszintű
+
+és az inline világok legjobb tulajdonságait.
+
+És ahhoz, hogy létrehozzunk egy inline block elemet,
+
+csak annyit kell tennünk, hogy a display tulajdonságot
+
+inline block-ra állítjuk, és kész.
+
+Lássuk tehát, hogyan csináljuk ezt a gyakorlatban,
+
+és néhány olyan helyzetet, ahol ez rendkívül hasznos lehet.
+
+Menjünk vissza a fejléc linkekhez, tehát ehhez
+
+a navigációhoz, hogy megmutathassam,
+
+hol lehet nagyon hasznos egy inline blokkelem.
+
+Tehát most nincs sok formázás itt, tehát nincs
+
+távolságtartás.
+
+Tehát ezt meg kell oldanunk.
+
+Szóval ez valahol itt lent volt, pont itt.
+
+És így térjünk vissza ahhoz, hogy megpróbáljunk hozzáadni néhány margót
+
+anélkül, hogy bármit is megváltoztatnánk a display tulajdonságban.
+
+Tegyük fel, hogy 30 pixeles jobb oldali margót szeretnénk, és ennek
+
+működnie kell, mert ez egy vízszintes térköz, és
+
+így még az inline elemeknél is működik.
+
+De ha most hozzá akarok adni egy felső
+
+margót, mondjuk 10 pixelt, akkor semmi sem fog változni, igaz?
+
+Így maradt a régi.
+
+Tehát pontosan ezt a viselkedést láttuk
+
+már az elején is.
+
+De ha most megváltoztatjuk a megjelenítést inline blokkra, akkor
+
+nézzük meg, mi történik.
+
+Láthattad, hogy most itt van a helyünk, és ha ezt megnézzük,
+
+akkor valóban láthatod
+
+a narancssárga helyet a jobb oldalon,
+
+majd a 10 pixelt a tetején.
+
+A dobozmodell tehát ismét blokkszintű elemként kerül
+
+alkalmazásra, de kívülről az elemek továbbra
+
+is egymás mellett helyezkednek el, és csak annyi helyet foglalnak
+
+el, amennyire szükségük van.
+
+Tehát úgy viselkedik, mint az inline elemek.
+
+Tehát ez egy nagyszerű technika bizonyos helyzetekben,
+
+még ha jelenleg vannak is modernebb módszereink arra,
+
+hogy valami hasonlót csináljunk, de bizonyos esetekben
+
+ezt tényleg nagyon jó tudni, és egy jó technika,
+
+amit az eszköztárunkban tarthatunk.
+
+Most már csak egy utolsó részlet,
+
+hogy el kell távolítanunk a margót az utolsó elemtől jobbra.
+
+Válasszuk ki a nav a: linket, és most valami
+
+újat fogunk látni.
+
+Szóval ez itt egy pszeudo osztály, igaz?
+
+De erre rá tudunk láncolni egy másik pszeudo osztályt,
+
+mert most az utolsó gyereket akarjuk, igaz?
+
+Így, majd a
+
+margót vissza akarjuk állítani nullára.
+
+Oké, ez vizuálisan semmit sem változtat.
+
+De itt most azt látjuk, hogy
+
+ennek a jobb oldalán már nincs ez a hely.
+
+És ez sokszor fontos.
+
+Ezért akartam megmutatni, hogy
+
+ezt a két pszeudo-osztályt gond
+
+nélkül megváltoztathatjuk.
+
+Remek, és most, csak a befejezésként, meg akartam
+
+mutatni, hogy a képek valójában inline blokkdobozok.
+
+Rendben?
+
+Az elején azt mondtam,
+
+hogy a képek valójában inline elemek, de
+
+valójában úgy viselkednek, mint az inline blokkelemek.
+
+Ezt könnyen demonstrálhatjuk,
+
+ha például némi margót adunk hozzá ehhez a képhez.
+
+Tehát, ha itt száz pixeles margót adok hozzá, akkor ha ez egy inline
+
+elem lenne, akkor nem kellene függőleges
+
+helyet létrehoznia.
+
+Tehát nem itt és nem itt, igaz?
+
+De figyeljük meg, mi történik,
+
+amikor elmentem ezt És így valóban láthatjuk, hogy
+
+ez a függőleges tér itt hozzá lett adva, és ez bizonyítja, hogy
+
+ez valóban egy inline blokkelem.
+
+És ugyanez igaz arra is, hogy ennek az elemnek a szélességét
+
+és magasságát is beállíthatjuk.
+
+Tehát, ha ez egy tisztán inline elem
+
+lenne, akkor ez a kettő itt sem működne, igaz?
+
+Tehát ezt is fontos megjegyezni,
+
+és állítsuk vissza a normális állapotba.
+
+Oké, ennyit a CSS dobozok típusáról.
+
+Csak egy gyors összefoglaló, vagy alapvetően az előadás
+
+tanulsága, hogy az esetek többségében a megjelenítési
+
+beállításokat nem fogjuk megváltoztatni,
+
+és egyszerűen az előre definiált
+
+doboztípust fogjuk használni, mert alapértelmezés szerint
+
+ezeknek nagyon sok értelme van.
+
+Azonban használhatjuk a display set to block
+
+funkciót, hogy egy kis inline elem például
+
+egy egész sort elfoglaljon,
+
+amire a való világban néha szükségünk
+
+lesz.
+
+Aztán fordítva, néha
+
+nem akarjuk, hogy egy blokk szintű elem
+
+az összes többi elemet egy új sorba tolja.
+
+Tehát alapvetően nem akarjuk, hogy mindig elfoglalják
+
+az összes rendelkezésre álló üres helyet, amit ki lehet tölteni.
+
+Ebben az esetben beállíthatjuk őket egy inline elemre, vagy, ami
+
+talán még hasznosabb, beállíthatjuk
+
+őket egy inline blokkelemre, mert akkor továbbra
+
+is alkalmazhatjuk a dobozmodellt a szokásos módon.
